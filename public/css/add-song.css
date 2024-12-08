@@ -1,0 +1,73 @@
+.container > form {
+  width: 100%;
+  margin-top: 3vh;
+}
+
+.container > form > * {
+  width: 100%;
+  margin: 1vh 0;
+}
+
+.container > form > label,
+input {
+  color: white;
+}
+
+.container > form > label {
+  font-size: 4vh;
+}
+
+.container > form > input {
+  margin-bottom: 2vh;
+  background-color: transparent;
+  border-color: #4accff;
+  border-width: 1px;
+  height: 4vh;
+  font-size: 20px;
+}
+
+#title {
+  padding-left: 5px;
+  border-radius: 10px;
+}
+
+#song, #image {
+  height: 5vh;
+}
+
+#song::file-selector-button, #image::file-selector-button {
+  border-radius: 10px;
+  background-color: transparent;
+  border-color: #4accff;
+  border-width: 1px;
+  color: white;
+  height: 100%;
+}
+
+.container > form > button {
+  width: auto;
+  border-radius: 10px;
+  height: 4vh;
+  font-size: 20px;
+  padding: 5px;
+  border-color: #4accff;
+  border-width: 1px;
+  background-color: transparent;
+  color: white;
+}
+
+.container > .back {
+  width: auto;
+  padding: 5px;
+  color:rgb(240, 46, 46);
+  border: none;
+  font-size: 26px;
+  background-color: transparent;
+  margin-top: 3vh;
+}
+
+/*  */
+
+.menu-element3 {
+  background-image: url("src/folder-blue.svg");
+}

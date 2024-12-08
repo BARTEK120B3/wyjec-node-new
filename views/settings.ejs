@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/header-container-footer.css">
+    <link rel="stylesheet" href="/css/settings.css">
+    <title>Settings</title>
+</head>
+<body>
+    <%- include('partials/header.html') %>
+    <div class="container">
+        <header class="container-header"><h2>Ustawienia</h2></header>
+        <section class="settings">
+            <div class="setting">
+                <h4>E-mail</h4>
+                <div class="row">
+                    <h5>music123@note.com</h3>
+                        <img src="/css/src/edit.svg" alt="">
+                </div>
+            </div>
+            <div class="setting">
+                <h4>Nazwa Użytkownika</h4>
+                <div class="row">
+                    <h5>Catcher</h3>
+                        <img src="/css/src/edit.svg" alt="">
+                </div>
+            </div>
+            <div class="setting">
+                <h4>Hasło</h4>
+                <div class="row">
+                    <h5>xxxxxxxxxxxxx</h3>
+                        <img src="/css/src/edit.svg" alt="">
+                </div>
+            </div>
+            <div class="delete-account">
+                <h5>Usuń Konto</h5>
+            </div>
+        </section>
+    </div>
+    <%- include('partials/footer-index.html') %>
+</body>
+</html>
+

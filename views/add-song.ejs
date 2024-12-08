@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/header-container-footer.css">
+    <link rel="stylesheet" href="/css/add-song.css">
+    <title>Find</title>
+</head>
+<body>
+    <%- include('partials/header.html') %>
+    <div class="container">
+      <header class="container-header"><h2>Dodaj piosenkę</h2></header>
+      <form action="/home/add-song" method="POST" enctype="multipart/form-data">
+        <label for="title">Tytuł</label>
+        <input type="text" name="title" id="title" required>
+        <label for="song">Piosenka</label>
+        <input type="file" name="song" id="song" required>
+        <label for="image">Zdjęcie</label>
+        <input type="file" name="image" id="image">
+        <button type="submit">Dodaj piosenkę</button>
+      </form>
+      <button class="back" onclick="window.location.href='/home/files'">Powrót</button>
+    </div>
+    <%- include('partials/footer-index.html') %>
+</body>
+</html>
+

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/header-container-footer.css">
+    <link rel="stylesheet" href="/css/homepage.css">
+    <title>Homepage</title>
+</head>
+<body>
+    <%- include('partials/header.html') %>
+    <div class="container">
+      <header class="container-header"><h2>Witaj Martyna</h2></header>
+      <section class="shortcuts">
+        <header class="shortcuts-header"><h3>Szybkie skróty</h3></header>
+        <section class="shortcuts-list">
+          <div class="shortcut">
+            <img src="/css/src/clancy.webp" alt="" />
+            <h4>Clancy</h4>
+          </div>
+          <div class="shortcut">
+            <img src="/css/src/mutemath.webp" alt="" />
+            <h4>Odd Soul</h4>
+          </div>
+          <div class="shortcut">
+            <img src="/css/src/a7x.jpg" alt="" />
+            <h4>Avenged Sevenfold</h4>
+          </div>
+        </section>
+      </section>
+      <section class="lastly-played">
+        <header class="lastly-played-header"><h3>Ostatnio odtwarzane</h3></header>
+        <section class="lastly-played-list">
+          <div class="lastly-played-song">
+            <img src="/css/src/coe.jpg" alt="" />
+            <h4>City Of Evil</h4>
+          </div>
+          <div class="lastly-played-song">
+            <img src="/css/src/sai.jpg" alt="" />
+            <h4>Scaled And Icy</h4>
+          </div>
+          <div class="lastly-played-song">
+            <img src="/css/src/mop.webp" alt="" />
+            <h4>Master Of Puppets</h4>
+          </div>
+        </section>
+      </section>
+    </div>
+    <%- include('partials/footer-index.html') %>
+</body>
+</html>
+

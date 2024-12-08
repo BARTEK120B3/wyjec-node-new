@@ -1,0 +1,51 @@
+.container > .searchbar {
+    margin-top: 3vh;
+    width: 100%;
+    height: 5vh;
+    background-color: black;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #4accff;
+    border-radius: 10px;
+    color: white;
+    font-size: 22px;
+    text-align: start;
+    padding-left: 8px;
+}
+
+.container > .results{
+    width: 100%;
+    margin-top: 3vh;
+}
+
+.container
+  > .results
+  > .result:not(:first-child):not(:last-child) {
+  margin: 1.5vh 0;
+}
+
+.container > .results > .result {
+  width: 100%;
+  height: 10vh;
+  background-color: #4accff;
+  display: flex;
+}
+
+.container > .results > .result > img {
+  width: 10vh;
+  height: 10vh;
+  background-color: aliceblue;
+}
+
+.container > .results > .result > h4 {
+  color: white;
+  font-size: 26px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-element2 {
+    background-image: url("src/search-blue.svg");
+  }

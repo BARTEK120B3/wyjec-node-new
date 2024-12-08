@@ -1,0 +1,178 @@
+.container > .albums {
+    width: 100%;
+    border: #4accff solid 1px;
+    margin-top: 3vh;
+    border-radius: 20px;
+    padding: 5%;
+  }
+  
+  .container > .albums > .albums-header {
+    color: white;
+    font-size: 26px;
+  }
+  
+  .container > .albums > .albums-list {
+    margin-top: 1.5vh;
+    width: 100%;
+  }
+  
+  .container
+    > .albums
+    > .albums-list
+    > .album:not(:first-child):not(:last-child) {
+    margin: 1.5vh 0;
+  }
+  
+  .container > .albums > .albums-list > .album {
+    width: 100%;
+    height: 10vh;
+    background-color: #4accff;
+    display: flex;
+  }
+  
+  .container > .albums > .albums-list > .album > img {
+    width: 10vh;
+    height: 10vh;
+    background-color: aliceblue;
+  }
+  
+  .container > .albums > .albums-list > .album > h4 {
+    color: white;
+    font-size: 26px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /*  */
+
+  .container > .playlists {
+    width: 100%;
+    border: #4accff solid 1px;
+    margin-top: 3vh;
+    border-radius: 20px;
+    padding: 5%;
+  }
+  
+  .container > .playlists > .playlists-header {
+    color: white;
+    font-size: 26px;
+  }
+  
+  .container > .playlists > .playlists-list {
+    margin-top: 1.5vh;
+    width: 100%;
+  }
+  
+  .container
+    > .playlists
+    > .playlists-list
+    > .playlist:not(:first-child):not(:last-child) {
+    margin: 1.5vh 0;
+  }
+  
+  .container > .playlists > .playlists-list > .playlist {
+    width: 100%;
+    height: 10vh;
+    background-color: #4accff;
+    display: flex;
+  }
+  
+  .container > .playlists > .playlists-list > .playlist > img {
+    width: 10vh;
+    height: 10vh;
+    background-color: aliceblue;
+  }
+  
+  .container > .playlists > .playlists-list > .playlist > h4 {
+    color: white;
+    font-size: 26px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /*  */
+
+  .container > .songs {
+    width: 100%;
+    border: #4accff solid 1px;
+    margin-top: 3vh;
+    border-radius: 20px;
+    padding: 5%;
+  }
+  
+  .container > .songs > .songs-header {
+    color: white;
+    font-size: 26px;
+  }
+  
+  .container > .songs > .songs-list {
+    margin-top: 1.5vh;
+    width: 100%;
+  }
+  
+  .container
+    > .songs
+    > .songs-list
+    > .song:not(:first-child):not(:last-child) {
+    margin: 1.5vh 0;
+  }
+  
+  .container > .songs > .songs-list > .song {
+    width: 100%;
+    height: 10vh;
+    background-color: #4accff;
+    display: flex;
+  }
+  
+  .container > .songs > .songs-list > .song > img {
+    width: 10vh;
+    height: 10vh;
+    background-color: aliceblue;
+  }
+  
+  .container > .songs > .songs-list > .song > h4 {
+    color: white;
+    font-size: 26px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container > .add-song {
+    width: 100%;
+    border: #4accff solid 1px;
+    margin-top: 3vh;
+    border-radius: 20px;
+    padding: 5%;
+  }
+
+  .container > .add-song > h3 {
+    color: white;
+    font-size: 26px;
+  }
+
+  .container > .add-song > button {
+    margin-top: 1.5vh;
+    aspect-ratio: 1 1;
+    width: 30%;
+    height: 5vh;
+    font-size: 26px;
+    color: #1EFCAB;
+    background-color: transparent;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: white solid 1px;
+  }
+
+  /*  */
+
+  .menu-element3 {
+    background-image: url("src/folder-blue.svg");
+  }

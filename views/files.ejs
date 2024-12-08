@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/header-container-footer.css">
+    <link rel="stylesheet" href="/css/files.css">
+    <title>Files</title>
+</head>
+<body>
+    <%- include('partials/header.html') %>
+    <div class="container">
+      <header class="container-header"><h2>Pliki</h2></header>
+      <section class="playlists">
+          <header class="playlists-header"><h3>Playlisty</h3></header>
+          <section class="playlists-list">
+            <div class="playlist">
+              <img src="/css/src/metal.png" alt="" />
+              <h4>Metal</h4>
+            </div>
+            <div class="playlist">
+              <img src="/css/src/rock.png" alt="" />
+              <h4>Rock</h4>
+            </div>
+            <div class="playlist">
+              <img src="/css/src/deathcore.jpeg" alt="" />
+              <h4>Deathcore</h4>
+            </div>
+          </section>
+      </section>
+      <section class="albums">
+          <header class="albums-header"><h3>Albumy</h3></header>
+          <section class="albums-list">
+            <div class="album">
+              <img src="/css/src/clancy.webp" alt="" />
+              <h4>Clancy</h4>
+            </div>
+            <div class="album">
+              <img src="/css/src/mutemath.webp" alt="" />
+              <h4>Odd Soul</h4>
+            </div>
+            <div class="album">
+              <img src="/css/src/libad.jpg" alt="" />
+              <h4>Life Is But a Dream</h4>
+            </div>
+          </section>
+      </section>
+      <section class="songs">
+          <header class="songs-header"><h3>Piosenki</h3></header>
+          <section class="songs-list">
+            <div class="song">
+              <img src="/css/src/clancy.webp" alt="" />
+              <h4>Overcompensate</h4>
+            </div>
+            <% songs.forEach(song => {%>
+              <div class="song <%= song.id%>">
+                <img src="/<%= personId%>/<%= song.id%>/cover.jpg" alt="">
+                <h4><%= song.name%></h4>
+              </div>
+            <% })%>
+          </section>
+      </section>
+      <section class="add-song">
+        <h3>Dodaj piosenkę</h3>
+        <button onclick="window.location.href = '/home/add-song'">+</button>
+      </section>
+  </div>
+    <%- include('partials/footer-index.html') %>
+</body>
+</html>
+

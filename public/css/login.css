@@ -1,0 +1,95 @@
+body {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-header {
+  background-image: url("src/top.svg");
+  background-size: contain;
+  height: 15vh;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 3vh;
+}
+
+.container {
+  width: 80%;
+  height: 50vh;
+}
+
+.container > fieldset {
+  height: 90%;
+  border-radius: 20px;
+  border-color: #4accff;
+  display: flex;
+  justify-content: center;
+}
+
+.container > fieldset > legend {
+  color: white;
+  font-size: 44px;
+}
+
+.container > fieldset > form {
+  height: 100%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container > fieldset > form > label {
+  color: white;
+  font-size: 32px;
+  margin-top: 3vh;
+}
+
+.container > fieldset > form > input {
+  background-color: black;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #4accff;
+  border-radius: 10px;
+  height: 12%;
+  margin-top: 1vh;
+  color: white;
+  font-size: 18px;
+  text-align: start;
+  padding-left: 8px;
+}
+
+.container > fieldset > form > button {
+  background-color: #3849ff;
+  font-size: 32px;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  margin-top: 4vh;
+}
+
+.container > section {
+  margin-top: 2vh;
+}
+
+.container > section > p {
+  color: white;
+}
+
+.container > section > p > a {
+  text-decoration: none;
+  color: #3849ff;
+}
+
+.main-footer {
+  background-image: url("src/bottom.svg");
+  background-size: contain;
+  height: 11vh;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}

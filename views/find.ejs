@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/header-container-footer.css">
+    <link rel="stylesheet" href="/css/find.css">
+    <title>Find</title>
+</head>
+<body>
+    <%- include('partials/header.html') %>
+    <div class="container">
+      <header class="container-header"><h2>Szukaj</h2></header>
+      <input type="text" class="searchbar">
+      <section class="results">
+          <div class="result">
+              <img src="/css/src/libad.jpg" alt="" />
+              <h4>Life Is But a Dream</h4>
+            </div>
+            <div class="result">
+              <img src="/css/src/nightmare.jpg" alt="" />
+              <h4>Nightmare</h4>
+            </div>
+            <div class="result">
+              <img src="/css/src/sa.jpg" alt="" />
+              <h4>Stadium Arcadium</h4>
+            </div>
+            <div class="result">
+              <img src="/css/src/trench.jpg" alt="" />
+              <h4>Trench</h4>
+            </div>
+            <div class="result">
+              <img src="/css/src/vitals.jpg" alt="" />
+              <h4>Vitals</h4>
+            </div>
+      </section>
+  </div>
+    <%- include('partials/footer-index.html') %>
+</body>
+</html>
+

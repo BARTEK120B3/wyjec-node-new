@@ -1,0 +1,57 @@
+.container > .settings {
+    margin-top: 3vh;
+    width: 100%;
+}
+
+.container > .settings > .setting {
+    margin-top: 5vh;
+}
+
+.container > .settings > .setting > h4, h5 {
+    color: white;
+}
+
+.container > .settings > .setting > h4 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.container > .settings > .setting > .row {
+    display: flex;
+}
+
+.container > .settings > .setting > .row > h5 {
+    margin-top: 1vh;
+    font-size: 24px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #4accff;
+    border-radius: 10px;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    padding-left: 8px;
+    padding-right: 8px;
+    width: auto;
+}
+
+.container > .settings > .setting > .row > img {
+    margin-left: 15px ;
+}
+
+.container > .settings > .delete-account {
+    margin-top: 5vh;
+}
+
+.container > .settings > .delete-account > h5 {
+    font-size: 26px;
+    font-weight: 600;
+    color:rgb(240, 46, 46);
+}
+
+/*  */
+
+.menu-element4 {
+    background-image: url("src/menu-blue.svg");
+  }

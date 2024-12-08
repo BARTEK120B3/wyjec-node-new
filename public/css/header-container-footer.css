@@ -1,0 +1,71 @@
+body {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-header {
+  background-image: url("src/top.svg");
+  background-size: contain;
+  height: 15vh;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 3vh;
+}
+
+.container {
+  margin-top: 16vh;
+  width: 90%;
+  margin-bottom: 13vh;
+}
+
+.container > .container-header {
+  width: 100%;
+}
+
+.container > .container-header > h2 {
+  color: white;
+  font-size: 40px;
+}
+
+.main-footer {
+  background-image: url("src/bottom-rectangle.svg");
+  background-size: contain;
+  height: 10vh;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.main-footer > .menu-element {
+  display: inline-block;
+  height: 7vh;
+  width: 7vh;
+}
+
+.menu-element1 {
+  background-image: url("src/note-black.svg");
+  background-size: contain;
+}
+
+.menu-element2 {
+  background-image: url("src/search-black.svg");
+  background-size: contain;
+}
+
+.menu-element3 {
+  background-image: url("src/folder-black.svg");
+  background-size: contain;
+}
+
+.menu-element4 {
+  background-image: url("src/menu-black.svg");
+  background-size: contain;
+}

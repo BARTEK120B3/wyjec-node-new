@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/register.css">
+    <title>Register</title>
+</head>
+<body>
+    <%- include('partials/header.html') %>
+    <div class="container">
+      <fieldset>
+        <legend>Rejestracja</legend>
+        <form action="/auth/register" method="POST">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" required/>
+          <label for="password">Hasło</label>
+          <input type="password" id="password" name="password" required/>
+          <button type="submit">Zarejestruj</button>
+        </form>
+      </fieldset>
+      <section class="registration-link">
+        <p>Masz już konto? <a href="/auth/login">Zaloguj się!</a></p>
+      </section>
+    </div>
+    <%- include('partials/footer-login.html') %>
+</body>
+</html>
+
