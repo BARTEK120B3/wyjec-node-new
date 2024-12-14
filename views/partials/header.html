@@ -1,1 +1,61 @@
-<header class="main-header"><h1>Wyjec</h1></header>
+<style>
+    .currently-played {
+        position: absolute;
+        top: 2vh;
+        left: 2vh;
+        display: flex;
+    }
+    .currently-played > img {
+        aspect-ratio: 1 / 1;
+        height: 6vh;
+        border-radius: 10px;
+    }
+    .currently-played > .animation {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: 1vh;
+    }
+    .currently-played > .animation > .col {
+        height: 4vh;
+        width: 1vh;
+        background-color: #4accff;
+        margin: 0 .5vh;
+        border-radius: 10px;
+        animation-iteration-count: infinite;
+        animation-play-state: paused;
+    }
+
+    .currently-played > .animation > .col2 {
+        animation-name: playing-middle;
+        animation-duration: 1s;
+    }
+
+    .currently-played > .animation > .col1, .col3 {
+        animation-name: playing;
+        animation-duration: 1s;
+    }
+
+    @keyframes playing {
+        0% {height: 4vh;}
+        50% {height: 2vh;}
+        100% {height: 4vh;}
+    }
+
+    @keyframes playing-middle {
+        0% {height: 2vh;}
+        50% {height: 4vh;}
+        100% {height: 2vh;}
+    }
+</style>
+<header class="main-header">
+    <div class="currently-played">
+        <img src="/css/src/a7x.jpg" alt="">
+        <div class="animation">
+            <div class="col1 col"></div>
+            <div class="col2 col"></div>
+            <div class="col3 col"></div>
+        </div>
+    </div>
+    <h1>Wyjec</h1>
+</header>

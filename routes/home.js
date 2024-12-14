@@ -128,7 +128,7 @@ router.post('/add-song', upload.fields([{ name: 'song' }, { name: 'image' }]), (
             fs.writeFileSync(path.join(songFolder, 'title.txt'), title)
             fs.renameSync(song.path, songPath)
             fs.renameSync(image.path, imagePath)
-
+            
             console.log('files saved')
             res.redirect('files')
         })
