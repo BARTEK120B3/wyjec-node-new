@@ -99,6 +99,18 @@ router.get('/add-song', (req, res) => {
     console.log('add-song')
 })
 
+router.get('/play', (req, res) => {
+    songId = req.query.songId
+    songName = req.query.songName
+    const data = {
+        songId: songId,
+        personId: req.cookies.email,
+        songName: songName
+    }
+    console.log('play')
+    res.render('play', data)
+})
+
 router.post('/add-song', upload.fields([{ name: 'song' }, { name: 'image' }]), (req, res) => {
     const {title} = req.body;
     const song = req.files['song']?.[0]

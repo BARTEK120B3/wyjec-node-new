@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/header-container-footer.css">
+    <link rel="stylesheet" href="/css/play.css">
+    <title><%= %></title>
+</head>
+<body>
+    <%- include('partials/header.html') %>
+    <div class="container">
+      <!-- <header class="container-header"><h2><%= songName%></h2></header> -->
+      <section>
+        <h2><%= songName%></h2>
+        <img src="/<%= personId%>/<%= songId%>/cover.jpg" alt="">
+        <audio controls autoplay>
+          <source src="/<%= personId%>/<%= songId%>/song.mp3" type="audio/mpeg">
+        </audio>
+      </section>
+      <h3 onclick="window.location.href = '/home/homepage'">Powrót</h3>
+    </div>
+    <%- include('partials/footer-index.html') %>
+    <script>
+      const cols = document.getElementsByClassName('col');
+      for (let i = 0; i < cols.length; i++){
+        cols[i].style.animationPlayState = 'running'
+      }
+    </script>
+</body>
+</html>
+

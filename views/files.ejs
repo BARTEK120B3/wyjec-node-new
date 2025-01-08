@@ -54,7 +54,7 @@
               <h4>Overcompensate</h4>
             </div>
             <% songs.forEach(song => {%>
-              <div class="song <%= song.id%>">
+              <div class="song <%= song.id%>" onclick="window.location.href = `/home/play?songId=<%= song.id%>&songName=<%= song.name%>`">
                 <img src="/<%= personId%>/<%= song.id%>/cover.jpg" alt="">
                 <h4><%= song.name%></h4>
               </div>
